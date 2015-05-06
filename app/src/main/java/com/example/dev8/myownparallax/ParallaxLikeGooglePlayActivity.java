@@ -85,7 +85,7 @@ public class ParallaxLikeGooglePlayActivity extends BaseActivity implements Obse
         if(event.getAction() == MotionEvent.ACTION_UP){
             if(toolbar.getTranslationY() != 0 && toolbarState.equals(ToolbarState.TOOLBAR_STATE_NORMAL) && lastScrollYDirection == 1){ // UP
                 final AlphaAnimation fadeIn = new AlphaAnimation(1.0f, 0.0f);
-                fadeIn.setDuration(300);
+                fadeIn.setDuration(400);
                 fadeIn.setAnimationListener(new Animation.AnimationListener() {
                     @Override
                     public void onAnimationStart(Animation animation) {
@@ -172,14 +172,14 @@ public class ParallaxLikeGooglePlayActivity extends BaseActivity implements Obse
 
         if(imageContainer.getTranslationY()*2 <= getFlexibleSpace() && toolbarState.equals(ToolbarState.TOOLBAR_STATE_NORMAL)) {
             final ObjectAnimator colorFade = ObjectAnimator.ofObject(toolbar, "backgroundColor", new ArgbEvaluator(), toolbarColor, android.R.color.transparent);
-            colorFade.setDuration(300);
+            colorFade.setDuration(400);
             colorFade.start();
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     toolbarTitle.setVisibility(View.INVISIBLE);
                 }
-            }, 200);
+            }, 300);
             toolbarState = ToolbarState.TOOLBAR_STATE_TRANSPARENT;
         }
 

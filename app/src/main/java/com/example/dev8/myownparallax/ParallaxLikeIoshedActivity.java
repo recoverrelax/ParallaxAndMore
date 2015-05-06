@@ -85,21 +85,6 @@ public class ParallaxLikeIoshedActivity extends BaseActivity implements Observab
         }
     }
 
-    public void showViewFadeAnimation(boolean visibility, final View view, int animationDuration) {
-        if (visibility && view.getVisibility() != View.VISIBLE) {
-            view.setVisibility(View.VISIBLE);
-            AlphaAnimation fadeIn = new AlphaAnimation(0.0f, 1.0f);
-            fadeIn.setDuration(animationDuration);
-            view.startAnimation(fadeIn);
-        }
-        if (!visibility && view.getVisibility() != View.INVISIBLE) {
-            view.setVisibility(View.INVISIBLE);
-            AlphaAnimation fade_out = new AlphaAnimation(1.0f, 0.0f);
-            fade_out.setDuration(animationDuration);
-            view.startAnimation(fade_out);
-        }
-    }
-
     @Override
     public void onDownMotionEvent() {}
 
