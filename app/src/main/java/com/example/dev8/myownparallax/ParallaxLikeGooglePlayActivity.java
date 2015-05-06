@@ -179,7 +179,7 @@ public class ParallaxLikeGooglePlayActivity extends BaseActivity implements Obse
                 public void run() {
                     toolbarTitle.setVisibility(View.INVISIBLE);
                 }
-            }, 300);
+            }, 150);
             toolbarState = ToolbarState.TOOLBAR_STATE_TRANSPARENT;
         }
 
