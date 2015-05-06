@@ -1,10 +1,1 @@
-# ParallaxAndMore
-Couple of scrolling effects like ioshed, googlePlay, etc
-
-Relevant Libraries Used:
-- Android-ObservableScrollView by ksoichiro: https://github.com/ksoichiro/Android-ObservableScrollView/blob/master/README.md
-- Android Floating Action Button by Clans: https://github.com/Clans/FloatingActionButton
-
-License
-
-http://www.apache.org/licenses/LICENSE-2.0.html
+(https://github.com/recoverrelax/ParallaxAndMore/wiki)
