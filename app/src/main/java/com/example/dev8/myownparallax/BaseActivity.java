@@ -18,6 +18,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @InjectView(R.id.toolbar_actionbar)
     Toolbar toolbar;
 
+    @Optional
     @InjectView(R.id.toolbarTitle)
     TextView toolbarTitle;
 

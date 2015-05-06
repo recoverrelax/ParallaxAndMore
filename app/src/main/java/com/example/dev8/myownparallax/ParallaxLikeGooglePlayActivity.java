@@ -37,7 +37,7 @@ public class ParallaxLikeGooglePlayActivity extends BaseActivity implements Obse
         showToolbarTitle(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-        toolbarTitle.setText("Cavaco Silva");
+        toolbarTitle.setText("Self-destructing virus kills off PCs");
         toolbarTitle.setVisibility(View.INVISIBLE);
 
         toolbarColor = getColor(R.color.primaryColor);
@@ -65,7 +65,7 @@ public class ParallaxLikeGooglePlayActivity extends BaseActivity implements Obse
 
     @Override
     public int getLayout() {
-        return R.layout.activity_main;
+        return R.layout.parallax_like_google_play_activity;
     }
 
     public void showToolbarTitle(boolean showTitle){
@@ -133,7 +133,7 @@ public class ParallaxLikeGooglePlayActivity extends BaseActivity implements Obse
          * We also change its state (the backgroundColor) back to normal, although, at first, it is invisible (offscreen).         *
          * So after this point, the toolbar is immediately after the topBorder of the screen and it visible.
          */
-        if(scrollY >= imageContainer.getHeight()*2 && isScrollDown(scrollY) && !toolbarState.equals(ToolbarState.TOOLBAR_STATE_NORMAL)){
+        if(scrollY >= imageContainer.getHeight() && isScrollDown(scrollY) && !toolbarState.equals(ToolbarState.TOOLBAR_STATE_NORMAL)){
             setToolbarColor(ToolbarState.TOOLBAR_STATE_NORMAL);
             toolbar.setVisibility(View.INVISIBLE);
             toolbar.setTranslationY(-toolbar.getHeight());

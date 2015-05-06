@@ -36,7 +36,7 @@ public class ParallaxImageScrollViewActivity extends BaseActivity implements Obs
         showToolbarTitle(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-        toolbarTitle.setText("Cavaco Silva");
+        toolbarTitle.setText("PARALLAX + FADING IMAGEVIEW");
         toolbarTitle.setVisibility(View.INVISIBLE);
 
         Bitmap imageBitmap = BitmapFactory.decodeResource(getResources(),
@@ -67,7 +67,7 @@ public class ParallaxImageScrollViewActivity extends BaseActivity implements Obs
 
     @Override
     public int getLayout() {
-        return R.layout.activity_main;
+        return R.layout.parallax_image_scrollview_activity;
     }
 
     public void showToolbarTitle(boolean showTitle){

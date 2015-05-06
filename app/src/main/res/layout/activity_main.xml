@@ -1,46 +1,32 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.dev8.myownparallax.MainActivity">
 
-    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
-        android:id="@+id/scrollview"
-        android:scrollbars="none"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parallax like GooglePlay"
+        android:id="@+id/parallax_play"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parallax Fade ImageView"
+        android:id="@+id/parallax_fade_scrollview"
+        android:layout_centerHorizontal="true" />
 
-        <FrameLayout
-            android:id="@+id/image_container"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="?colorPrimary">
-
-            <ImageView
-                android:id="@+id/image"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/wallpapers66"
-                tools:ignore="ContentDescription" />
-        </FrameLayout>
-            <TextView
-                android:padding="5dp"
-                android:background="@color/white"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/image_container"
-                android:text="@string/big_text" />
-        </RelativeLayout>
-    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
-
-    <include layout="@layout/toolbar"/>
-</FrameLayout>
-
-
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button4"
+            android:layout_below="@+id/parallax_play"
+            android:layout_centerHorizontal="true" />
+</RelativeLayout>
